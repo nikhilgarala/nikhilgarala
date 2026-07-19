@@ -1,938 +1,685 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikhil Garala — Senior Software Engineer | Flutter, AI/ML &amp; Full-Stack</title>
+  <meta name="description" content="Portfolio of Nikhil Garala, a Senior Software Engineer with 4+ years building cross-platform Flutter apps, AI/ML-powered tools, and full-stack products. Explore projects, skills, and download resume.">
+  <meta name="keywords" content="Nikhil Garala, Senior Software Engineer, Flutter Developer, AI ML Engineer, Mobile App Developer, Android Developer, iOS Developer, Full Stack Developer, Node.js, React, Portfolio">
+  <meta name="author" content="Nikhil Garala">
+  <meta name="theme-color" content="#090c14">
 
-  <!-- Favicons -->
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nikhil Garala — Senior Software Engineer | Flutter, AI/ML & Full-Stack">
+  <meta property="og:description" content="4+ years building cross-platform Flutter apps, AI/ML-powered tools, and full-stack products. View projects and download resume.">
+  <meta property="og:image" content="https://nikhilgarala.io/My_Photo/Profile.jpg">
+  <meta property="og:url" content="https://nikhilgarala.io/">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Favicon (inline monogram, no external file dependency) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23090c14'/%3E%3Ctext x='32' y='42' font-family='Poppins,Arial,sans-serif' font-size='26' font-weight='700' fill='url(%23g)' text-anchor='middle'%3ENG%3C/text%3E%3C/svg%3E">
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <title>Garala Nikhil</title>
-  
-  <!-- Vendor CSS Files -->
-  <link rel="stylesheet" type="text/css" href="assets/fancybox/jquery.fancybox.min.css">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <!-- Icons -->
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="node_modules/bootstrap-social/bootstrap-social.css" rel="stylesheet">
-  <link href="node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet"> 
-  
+  <!-- Site styles -->
+  <link href="assets/css/portfolio.css" rel="stylesheet">
 </head>
-
-<script>
-  function getAge(DOB) {
-    var today = new Date();
-    var birthDate = new Date(DOB);
-    var age = today.getFullYear() - birthDate.getFullYear();
-    var m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age = age - 1;
-    }
-    
-   return age;
-}
-</script>
-
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <div id="preloader" aria-hidden="true"></div>
 
-  <!-- ======= Header ======= -->
-  <header id="header"  class="d-flex flex-column justify-content-center">
-    <nav class="nav-menu">
-      
+  <!-- ======= Header / Nav ======= -->
+  <header id="header">
+    <div class="nav-wrap">
+      <a href="#hero" class="logo">Nikhil<span>Garala.</span></a>
+
+      <input type="checkbox" id="nav-toggle-input">
+      <nav class="nav-menu" aria-label="Primary">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>HOME</span></a></li>
-          <li><a href="#about"><i class="bx bx-user"></i> <span>ABOUT</span></a></li>
-          <li><a href="#skills"><i class="icofont-book"></i> <span>SKILLS</span></a></li>
-          <li><a href="#resume"><i class="icofont-education"></i> <span>EDUCATION</span></a></li>
-          <li><a href="#certificate"><i class="icofont-certificate-alt-1"></i> <span>CERTIFICATE</span></a></li>
-          <li><a href="#myphoto"><i class="icofont-image"></i> <span>PHOTOS</span></a></li>
-          <!-- <li><a href="#contact"><i class="bx bx-envelope"></i><span>CONTACT</span></a></li> -->
-
+          <li class="active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certificate">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      
-    </nav><!-- .nav-menu -->
+      </nav>
+      <label for="nav-toggle-input" class="nav-scrim" aria-hidden="true"></label>
 
+      <div class="nav-actions">
+        <a href="assets/resume/Nikhil_Garala_Resume.pdf" download="Nikhil_Garala_Resume.pdf" class="btn btn-primary btn-sm">
+          <i class='bx bx-download' aria-hidden="true"></i><span class="btn-label-full">Resume</span>
+        </a>
+        <label for="nav-toggle-input" class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <i class='bx bx-menu' aria-hidden="true"></i>
+        </label>
+      </div>
+    </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="justify-content-center">
-      <h1>HELLO, I'M <br />GARALA NIKHIL</h1>
-      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
-    <div class="social-links">
-      <a href="https://www.facebook.com/people/Nikhil-Patel/100009687433294" target="_BLANCK" class="Facebook"><i class="icofont-facebook"></i></a>
-      <a href="https://www.instagram.com/garala_nikhil/" target="_BLANK" class="Instagram"><i class="bx bxl-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/garalanikhil" target="_BLANK" class="Linkedin"><i class="bx bxl-linkedin"></i></a>
-      <a href="https://twitter.com/GaralaNikhil" target="_BLANK" class="Twitter"><i class="bx bxl-twitter"></i></a>
-      
-    </div>
-  </section>
-  
   <main id="main">
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="section-title">
-          <h2>About</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="My_Photo/Profile.jpg"" class="img-fluid" alt="">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="hero-eyebrow"><span class="dot"></span> Open to new opportunities</span>
+          <h1><span class="hi">Hello, I'm</span>Nikhil Garala</h1>
+          <p class="role-line">I'm a <span class="typed" data-typed-items="Senior Software Engineer, Flutter &amp; Mobile Specialist, AI/ML Enthusiast, Full-Stack Problem Solver"></span></p>
+          <p class="hero-desc">A dedicated Senior Software Engineer with 4+ years building powerful, user-friendly products — from cross-platform Flutter apps to full-stack systems in Node.js, TypeScript, Go and PostgreSQL. I'm especially drawn to Artificial Intelligence and Machine Learning, applying AI-driven fraud detection, object recognition and AR (ARKit) to build products that solve real problems and stand out.</p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary"><i class='bx bx-grid-alt'></i> View My Work</a>
+            <a href="assets/resume/Nikhil_Garala_Resume.pdf" download="Nikhil_Garala_Resume.pdf" class="btn btn-outline"><i class='bx bx-download'></i> Download CV</a>
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>GARALA NIKHIL</b></h3>
-            <!-- <p class="font-italic">
-             Something write about My Self.................!
-            </p> -->
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 20-November-1998</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Nationality:</strong> INDIAN</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong>  Rajkot, Gujarat</li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 
-                    <script>document.write(getAge("11/20/1998"));</script></li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Master</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> nikhilpatel4593@gmail.com</li>
-                  
-                </ul>
-              </div>
-            </div>
-            
-            <ul>
-                <li><i class="icofont-caret-right"></i>I am passionate about teaching and learning.</oi>
-                <li><i class="icofont-caret-right"></i>Extensive knowledge in OOP's and procedural programming.</li>
-                <li><i class="icofont-caret-right"></i>Always ready to learn new things.</li>
-                <li><i class="icofont-caret-right"></i>Extensive knowledge of programming logic and codes.</li>
-                <li><i class="icofont-caret-right"></i>Love to solve challenges.</li>
-            </ul>
-  
+
+          <div class="hero-stats">
+            <div class="stat"><b>4+</b><span>Years Experience</span></div>
+            <div class="stat"><b>16+</b><span>Projects Delivered</span></div>
+            <div class="stat"><b>15+</b><span>Certifications</span></div>
+          </div>
+
+          <div class="social-links" style="margin-top:34px;">
+            <a href="https://www.linkedin.com/in/garalanikhil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/garala_nikhil/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+            <a href="https://twitter.com/GaralaNikhil" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.facebook.com/people/Nikhil-Patel/100009687433294" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+            <a href="mailto:nikhil.garalamca@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
           </div>
         </div>
 
+        <div class="hero-visual">
+          <div class="hero-photo-wrap">
+            <div class="hero-photo-ring" aria-hidden="true"></div>
+            <div class="hero-photo">
+              <img src="My_Photo/Profile.jpg" alt="Portrait of Nikhil Garala" data-fallback-initials="NG" width="360" height="360">
+            </div>
+            <div class="hero-badge">
+              <i class='bx bx-briefcase-alt-2'></i>
+              <div>
+                <b>Senior Software Engineer</b>
+                <span>Flutter · AI/ML · Full-Stack</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- End About Section -->
+
+      <a href="#about" class="scroll-cue"><span class="mouse"></span>Scroll</a>
+    </section><!-- End Hero -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">About Me</span>
+          <h2>Turning ideas into <span class="gradient-text">reliable products</span></h2>
+          <p>A quick look at who I am, what I value, and how I work.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo" data-reveal>
+            <img src="My_Photo/Profile.jpg" alt="Nikhil Garala" data-fallback-initials="NG" loading="lazy">
+          </div>
+
+          <div class="about-content" data-reveal data-reveal-delay="1">
+            <p class="about-lead">I'm a dedicated Senior Software Engineer with over 4 years of experience, specializing in building powerful cross-platform apps with Flutter and full-stack systems with Node.js, TypeScript and Go. I have a strong interest in Artificial Intelligence and Machine Learning — applying techniques like fraud detection, object recognition and AR (ARKit) — and I manage databases like PostgreSQL, MongoDB and MySQL to ship products that are both useful and memorable.</p>
+
+            <div class="skill-tags" style="margin-bottom:28px;">
+              <span>Machine Learning</span><span>Artificial Intelligence</span><span>Mobile App Development</span><span>Full-Stack Engineering</span>
+            </div>
+
+            <div class="info-grid">
+              <div class="info-item">
+                <i class='bx bx-map'></i>
+                <div><b>Location</b><span>Manavadar, Gujarat, India</span></div>
+              </div>
+              <div class="info-item">
+                <i class='bx bx-envelope'></i>
+                <div><b>Email</b><a href="mailto:nikhil.garalamca@gmail.com">nikhil.garalamca@gmail.com</a></div>
+              </div>
+              <div class="info-item">
+                <i class='bx bx-phone'></i>
+                <div><b>Phone</b><a href="tel:+919512361221">+91 95123 61221</a></div>
+              </div>
+              <div class="info-item">
+                <i class='bx bx-graduation'></i>
+                <div><b>Degree</b><span>MCA, Atmiya University</span></div>
+              </div>
+            </div>
+
+            <ul class="check-list">
+              <li><i class='bx bx-check-circle'></i> 4+ years shipping production Flutter apps for iOS &amp; Android</li>
+              <li><i class='bx bx-check-circle'></i> Comfortable owning a project end-to-end — requirements, architecture, delivery</li>
+              <li><i class='bx bx-check-circle'></i> Full-stack capable: Node.js, Django, PostgreSQL, MongoDB, Firebase</li>
+              <li><i class='bx bx-check-circle'></i> Applying AI/ML — fraud detection, object recognition, ARKit — to real products</li>
+              <li><i class='bx bx-check-circle'></i> Speaks English, Hindi &amp; Gujarati · Enjoys music and reading</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    <section id="skills" class="section-tight" style="background:var(--bg-alt);">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>MY SKILLS</p>
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Skills</span>
+          <h2>My <span class="gradient-text">Technical Toolbox</span></h2>
+          <p>Technologies I use to design, build and ship end-to-end products.</p>
         </div>
 
-        <div class="row">
-           <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill">Android  <i class="val">98%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 98.2%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+        <div class="skills-grid">
+          <div class="skill-card" data-reveal>
+            <div class="skill-card-head"><span class="icon"><i class='bx bx-code-curly'></i></span><h3>Languages</h3></div>
+            <div class="skill-tags">
+              <span>Java</span><span>Dart</span><span>JavaScript</span><span>TypeScript</span><span>Go</span><span>Python</span><span>SQL</span>
             </div>
-
-
-            <div class="progress">
-              <span class="skill">Bootstrap 4 <i class="val">97%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 97.2%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">HTML5 <i class="val">92.0%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 92.0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-
-            <div class="progress">
-              <span class="skill">CSS3 <i class="val">94%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 94.37%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-
-            <div class="progress">
-              <span class="skill">Java <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 90.2%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>  
-
           </div>
 
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill">AngularJS <i class="val">98%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 98.2%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+          <div class="skill-card" data-reveal data-reveal-delay="1">
+            <div class="skill-card-head"><span class="icon"><i class='bx bx-brain'></i></span><h3>AI &amp; ML</h3></div>
+            <div class="skill-tags">
+              <span>Fraud Detection</span><span>Object Recognition</span><span>ML Models</span><span>ARKit</span><span>Rasa</span>
             </div>
-            <div class="progress">
-              <span class="skill">Kotlin <i class="val">96%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 96.2%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Php <i class="val">97%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 97.2%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Laravel <i class="val">98%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 98.2%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Python(Including: Django , Machine Leaning) <i class="val">92%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 92.2%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">SQL <i class="val">89%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 85.2%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+          </div>
 
+          <div class="skill-card" data-reveal data-reveal-delay="2">
+            <div class="skill-card-head"><span class="icon"><i class='bx bx-server'></i></span><h3>Backend &amp; APIs</h3></div>
+            <div class="skill-tags">
+              <span>Node.js</span><span>Express.js</span><span>Django</span><span>Spring Boot</span><span>REST APIs</span><span>Databricks</span><span>Snowflake</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal>
+            <div class="skill-card-head"><span class="icon"><i class='bx bx-mobile-alt'></i></span><h3>Mobile Development</h3></div>
+            <div class="skill-tags">
+              <span>Flutter (iOS &amp; Android)</span><span>Android Studio</span><span>MVVM</span><span>GetX</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal data-reveal-delay="1">
+            <div class="skill-card-head"><span class="icon"><i class='bx bx-data'></i></span><h3>Databases</h3></div>
+            <div class="skill-tags">
+              <span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span><span>Firebase</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal data-reveal-delay="2">
+            <div class="skill-card-head"><span class="icon"><i class='bx bx-cloud'></i></span><h3>Cloud &amp; Security</h3></div>
+            <div class="skill-tags">
+              <span>AWS</span><span>Google Cloud Platform</span><span>IAM &amp; Cloud Security</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal data-reveal-delay="3">
+            <div class="skill-card-head"><span class="icon"><i class='bx bx-wrench'></i></span><h3>Tools &amp; Version Control</h3></div>
+            <div class="skill-tags">
+              <span>Git</span><span>GitHub</span><span>VS Code</span><span>Google Maps API</span><span>Odoo</span><span>HTML/CSS</span>
+            </div>
           </div>
         </div>
       </div>
-    </section><!-- End Skills Section -->
+    </section><!-- End Skills -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>EDUCATION</h2>
-          <p>MY EDUCATION</p>
+    <!-- ======= Experience Section ======= -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Experience</span>
+          <h2>Where I've <span class="gradient-text">made an impact</span></h2>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6">
-            <!-- <h3 class="resume-title">Sumary</h3> -->
-            <!-- <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+        <div class="timeline">
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="badge-date">April 2022 — Present</span>
+              <h3>Senior Software Engineer</h3>
+              <span class="org">Tecblic Pvt Ltd · Ahmedabad, India</span>
               <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div> -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Computer Application - (MCA)</h4>
-              <h5>2019 - 2021</h5>
-              <p><em>Atmiya University , Rajkot , India</em></p>
-              <p>On 15/08/2019, I started the journey of my master life....</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Computer Application - (BCA)</h4>
-              <h5>2016 - 2019</h5>
-              <p><em>Harivandana College , Rajkot , India</em></p>
-              <p>On 06/06/2016, I started the journey of my college life....</p>
-            </div>
-         
-
-              <!-- HSC -->
-              <div class="resume-item">
-                <h4>H.S.C</h4>
-                <h5>2016</h5>
-                <p><em>GSHSEB</em></p>
-                <!-- <p>On 06/06/2016, I Started The Journey Of My College Life....</p> -->
-              </div>
-            </div>
-        </div>
-      
-          <div class="section-title">
-            <h2>EXPERIENCE</h2>
-            <p>MY EXPERIENCE</p>
-          </div>
-
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Computer Teacher</h4>
-              <h5>2016 -2019</h5>
-              <p><em>Mahatma Gandhi School, Rajkot , India</em></p>
-              <ul>
-                <li>That was my job as a computer teacher which i did with my BCA .</li>
-                <li>In the afternoon i worked as a teacher. </li>
-                <li>I had a dream of becoming a teacher which i complete.</li> 
-                <li>At that time i was a teach computer subject on standard 8,9,10 and 11,12(Science).</li> 
+                <li><i class='bx bxs-circle'></i> Leading Flutter app development across iOS and Android while owning project-level responsibilities.</li>
+                <li><i class='bx bxs-circle'></i> Manage the complete project lifecycle — translating client requirements into technical documents and guiding development through to delivery.</li>
+                <li><i class='bx bxs-circle'></i> Apply AI/ML techniques — fraud detection, object recognition, ARKit-based AR — to build products that stand out.</li>
+                <li><i class='bx bxs-circle'></i> Delivered a wide range of production apps spanning eSports, fintech, legal-tech, AR/AI and mobility domains.</li>
               </ul>
             </div>
-            <!-- <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+          </div>
+
+          <div class="timeline-item" data-reveal data-reveal-delay="1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="badge-date">April 2021 — March 2022</span>
+              <h3>Junior Mobile App Developer</h3>
+              <span class="org">Maglinc Creative Solutions Pvt Ltd</span>
               <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                <li><i class='bx bxs-circle'></i> Started my professional mobile development career building Android &amp; Flutter applications.</li>
+                <li><i class='bx bxs-circle'></i> Built a strong foundation in mobile UI development, API integration and app deployment.</li>
               </ul>
-            </div> -->
-          </div>
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="certificate" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-            <div class="section-title">
-              <h2>CERTIFICATE</h2>
-              <p>ONLINE CERTIFICATE ACHIEVED</p>
-            </div>
-
-      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-        <div class="container">
-          <div class="col-lg-11 col-md-6">
-            <div class="portfolio">
-              <div class="card">
-                <div class="card-date">
-                  <h5>11</h5>
-                  <h4>Aug</h4>
-                  <h2>2020</h2>
-                </div>
-                <div class="card-body">
-                  <h3>Python for Everybody Specialization</h3>
-                  <ul>
-                    <li><label><b>MOOC Offered from :</b> University of Michigan</label></li>
-                    <li><label><b>Offered Through :</b> Coursera</label></li>
-                  </ul>
-                  <p><i class="icofont-link"></i><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EDCNLMS6AKJ3"target="_blank">https://www.coursera.org/account/accomplishments/specialization/certificate/EDCNLMS6AKJ3</a></p>
-                </div>
-              </div>
             </div>
           </div>
-          <br />
-          <!-- Single Page Web Applications with AngularJS -->
-          <div class="col-lg-11 col-md-6">
-            <div class="portfolio">
-              <div class="card">
-                <div class="card-date">
-                  <h5>27</h5>
-                  <h4>Sep</h4>
-                  <h2>2020</h2>
-                </div>
-                <div class="card-body">
-                  <h3>Single Page Web Applications with AngularJS</h3>
-                  <ul>
-                    <li><label><b>MOOC Offered from :</b> Johns Hopkins University</label></li>
-                    <li><label><b>Offered Through :</b>Coursera</label></li>
-                  </ul>
-                  <p><i class="fa fa-link"></i><a href="https://coursera.org/share/552e48a8c34195a0debd7ee7ed55a192" target="_blank">https://coursera.org/share/552e48a8c34195a0debd7ee7ed55a192</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br />
-          <!-- Java Programming: Solving Problems with Software -->
-          <div class="col-lg-11 col-md-6">
-            <div class="portfolio">
-              <div class="card">
-                <div class="card-date">
-                  <h5>11</h5>
-                  <h4>Aug</h4>
-                  <h2>2020</h2>
-                </div>
-                <div class="card-body">
-                  <h3>Java Programming: Solving Problems with Software</h3>
-                  <ul>
-                    <li><label><b>MOOC Offered from :</b> Duke University</label></li>
-                    <li><label><b>Offered Through :</b> Coursera</label></li>
-                  </ul>
-                  <p><i class="fa fa-link"></i><a href="https://coursera.org/share/a713dcfb75711b79612eb109867044c5"target="_blank">https://coursera.org/share/a713dcfb75711b79612eb109867044c5</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br />
-          
-          <!-- Using Databases with Python -->
-          <div class="col-lg-11 col-md-6">
-            <div class="portfolio">
-              <div class="card">
-                <div class="card-date">
-                  <h5>11</h5>
-                  <h4>Aug</h4>
-                  <h2>2020</h2>
-                </div>
-                <div class="card-body">
-                  <h3>Using Databases with Python</h3>
-                  <ul>
-                    <li><label><b>MOOC Offered from :</b> University of Michigan</label></li>
-                    <li><label><b>Offered Through :</b> Coursera</label></li>
-                  </ul>
-                  <p><i class="fa fa-link"></i><a href="https://coursera.org/share/50b3b2b4fa737a4153cec4f5078058bd" target="_blank">https://coursera.org/share/50b3b2b4fa737a4153cec4f5078058bd</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br />
-
-          <!-- Introduction to CSS3 -->
-          <div class="col-lg-11 col-md-6">
-            <div class="portfolio">
-              <div class="card">
-                <div class="card-date">
-                  <h5>17</h5>
-                  <h4>Aug</h4>
-                  <h2>2020</h2>
-                </div>
-                <div class="card-body">
-                  <h3>Introduction to CSS3</h3>
-                  <ul>
-                    <li><label><b>MOOC Offered from :</b> University of Michigan</label></li>
-                    <li><label><b>Offered Through :</b> Coursera</label></li>
-                  </ul>
-                  <p><i class="fa fa-link"></i><a href="https://coursera.org/share/fa05a957675c42d30cacae8302678287"target="_blank">https://coursera.org/share/fa05a957675c42d30cacae8302678287</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br />
-
-          <!-- Android App Components - Intents, Activities, and Broadcast Receivers -->
-          <div class="col-lg-11 col-md-6">
-            <div class="portfolio">
-              <div class="card">
-                <div class="card-date">
-                  <h5>29</h5>
-                  <h4>Jun</h4>
-                  <h2>2020</h2>
-                </div>
-                <div class="card-body">
-                  <h3>Android App Components - Intents, Activities, and Broadcast Receivers</h3>
-                  <ul>
-                    <li><label><b>MOOC Offered from :</b> Vanderbilt University</label></li>
-                    <li><label><b>Offered Through :</b> Coursera</label></li>
-                  </ul>
-                  <p><i class="fa fa-link"></i><a href="https://coursera.org/share/376a34da5c50cc93b165920a919cad65"target="_blank">https://coursera.org/share/376a34da5c50cc93b165920a919cad65</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br />
-          
-            <!-- Introduction to HTML5 -->
-            <div class="col-lg-11 col-md-6">
-              <div class="portfolio">
-                <div class="card">
-                  <div class="card-date">
-                    <h5>30</h5>
-                    <h4>May</h4>
-                    <h2>2020</h2>
-                  </div>
-                  <div class="card-body">
-                    <h3>Introduction to HTML5</h3>
-                    <ul>
-                      <li><label><b>MOOC Offered from :</b> University of Michigan</label></li>
-                      <li><label><b>Offered Through :</b> Coursera</label></li>
-                    </ul>
-                    <p><i class="fa fa-link"></i><a href="https://coursera.org/share/5cb79f78495d23b07c60be88e6ee2db3" target="_blank">https://coursera.org/share/5cb79f78495d23b07c60be88e6ee2db3</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          <br />
-
-              <!-- Build Your First Android App (Project-Centered Course) -->
-              <div class="col-lg-11 col-md-6">
-                <div class="portfolio">
-                  <div class="card">
-                    <div class="card-date">
-                      <h5>8</h5>
-                      <h4>Jun</h4>
-                      <h2>2020</h2>
-                    </div>
-                    <div class="card-body">
-                      <h3>Build Your First Android App (Project-Centered Course)</h3>
-                      <ul>
-                        <li><label><b>MOOC Offered from :</b> CentraleSupélec</label></li>
-                        <li><label><b>Offered Through :</b> Coursera</label></li>
-                      </ul>
-                      <p><i class="fa fa-link"></i><a href="https://coursera.org/share/03e7070a0bbba67949f0034afa1e5a6e" target="_blank">https://coursera.org/share/03e7070a0bbba67949f0034afa1e5a6e</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          <br />
-
-            <!-- Introduction to Structured Query Language (SQL) -->
-            <div class="col-lg-11 col-md-6">
-              <div class="portfolio">
-                <div class="card">
-                  <div class="card-date">
-                    <h5>30</h5>
-                    <h4>May</h4>
-                    <h2>2020</h2>
-                  </div>
-                  <div class="card-body">
-                    <h3>Introduction to Structured Query Language (SQL)</h3>
-                    <ul>
-                      <li><label><b>MOOC Offered from :</b> University of Michigan</label></li>
-                      <li><label><b>Offered Through :</b> Coursera</label></li>
-                    </ul>
-                    <p><i class="fa fa-link"></i><a href="https://coursera.org/share/3616fff0939d781b8d1137c1f5557d8f" target="_blank">https://coursera.org/share/3616fff0939d781b8d1137c1f5557d8f</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          <br />
-            
-
-
-          <!-- Merge, Sort and Filter Data in Python Pandas -->
-          <div class="col-lg-11 col-md-6">
-            <div class="portfolio">
-              <div class="card">
-                <div class="card-date">
-                  <h5>13</h5>
-                  <h4>Aug</h4>
-                  <h2>2020</h2>
-                </div>
-                <div class="card-body">
-                  <h3>Merge, Sort and Filter Data in Python Pandas</h3>
-                  <ul>
-                    <li><label><b>MOOC Offered from :</b> Coursera Project Network</label></li>
-                    <li><label><b>Offered Through :</b> Coursera</label></li>
-                  </ul>
-                  <p><i class="fa fa-link"></i><a href="https://coursera.org/share/0561082c604451e9d157f76a4ead6fa6"target="_blank">https://coursera.org/share/0561082c604451e9d157f76a4ead6fa6</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br />
-
-          <!-- Python Dynamic HTML Web Server -->
-          <div class="col-lg-11 col-md-6">
-            <div class="portfolio">
-              <div class="card">
-                <div class="card-date">
-                  <h5>20</h5>
-                  <h4>Aug</h4>
-                  <h2>2020</h2>
-                </div>
-                <div class="card-body">
-                  <h3>Python Dynamic HTML Web Server</h3>
-                  <ul>
-                    <li><label><b>MOOC Offered from :</b> Coursera Project Network</label></li>
-                    <li><label><b>Offered Through :</b> Coursera</label></li>
-                  </ul>
-                  <p><i class="fa fa-link"></i><a href="https://coursera.org/share/674659b1de384b9d0415df263c2027a1"target="_blank">https://coursera.org/share/674659b1de384b9d0415df263c2027a1</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br />
-
-          <!-- Capstone: Retrieving, Processing, and Visualizing Data with Python -->
-          <div class="col-lg-11 col-md-6">
-            <div class="portfolio">
-              <div class="card">
-                <div class="card-date">
-                  <h5>11</h5>
-                  <h4>Aug</h4>
-                  <h2>2020</h2>
-                </div>
-                <div class="card-body">
-                  <h3>Capstone: Retrieving, Processing, and Visualizing Data with Python</h3>
-                  <ul>
-                    <li><label><b>MOOC Offered from :</b> University of Michigan</label></li>
-                    <li><label><b>Offered Through :</b> Coursera</label></li>
-                  </ul>
-                  <p><i class="fa fa-link"></i><a href="https://coursera.org/share/b7ab5bff62ef9fccf995abb7858282ba"target="_blank">https://coursera.org/share/b7ab5bff62ef9fccf995abb7858282ba</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br />
-
-
-          <!-- Front-End Web UI Frameworks and Tools: Bootstrap 4 -->
-          <div class="col-lg-11 col-md-6">
-            <div class="portfolio">
-              <div class="card">
-                <div class="card-date">
-                  <h5>2</h5>
-                  <h4>Sep</h4>
-                  <h2>2020</h2>
-                </div>
-                <div class="card-body">
-                  <h3>Front-End Web UI Frameworks and Tools: Bootstrap 4</h3>
-                  <ul>
-                    <li><label><b>MOOC Offered from :</b> The Hong Kong University of Science and Technology</label></li>
-                    <li><label><b>Offered Through :</b>Coursera</label></li>
-                  </ul>
-                  <p><i class="fa fa-link"></i><a href="https://coursera.org/share/2890345c7932aa8f11849880725ea781"target="_blank">https://coursera.org/share/2890345c7932aa8f11849880725ea781</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br />
-
-        </div>
         </div>
       </div>
+    </section><!-- End Experience -->
 
-
+    <!-- ======= Projects Section ======= -->
+    <section id="projects" class="section-tight" style="background:var(--bg-alt);">
       <div class="container">
-        <div class="row portfolio-container">
-         
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Certificates/Certificate_Google_Digital_Garage.jpg" data-fancybox data-caption="Google Digital Garage">
-                <img src="My_Photo/Certificates/Certificate_Google_Digital_Garage.jpg"  style="width:100%;max-width:380px" alt="Google Digital Garage">
-              </a>
-              <div class="portfolio-info"></div>
-            </div>
-          </div>
-         
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Projects</span>
+          <h2>Selected <span class="gradient-text">Work</span></h2>
+          <p>A snapshot of production apps and platforms I've designed and built for clients.</p>
+        </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Certificates/MyGov_Ayush Quiz.jpg" data-fancybox data-caption="MyGov Ayush Quiz">
-                <img src="My_Photo/Certificates/MyGov_Ayush Quiz.jpg"  style="width:100%;max-width:380px" alt="MyGov_Ayush Quiz">
-              </a>
-              <div class="portfolio-info"></div>
-            </div>
-          </div>
-                
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Certificates/MyGov_Covid-19 Quiz.jpg" data-fancybox data-caption="MyGov Covid-19 Quiz">
-                <img src="My_Photo/Certificates/MyGov_Covid-19 Quiz.jpg"  style="width:100%;max-width:380px" alt="MyGov_Covid-19 Quiz">
-              </a>
-              <div class="portfolio-info"></div>
-            </div>
+        <div class="filter-bar" role="tablist" aria-label="Filter projects by category" data-reveal>
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile Apps</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web &amp; Backend</button>
+          <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI &amp; Data</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-card" data-category="mobile" data-reveal>
+            <div class="project-top"><span class="project-icon"><i class='bx bx-trophy'></i></span><span class="project-cat">Mobile</span></div>
+            <h3>eSports Tournament Management Platform</h3>
+            <p>eSports tournament management platform with real-time registration, scheduling, integrated live streaming and automated bracket management via external tournament APIs.</p>
+            <div class="project-tech"><span>Flutter</span><span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>AWS</span><span>Firebase</span><span>OAuth</span></div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Certificates/National Education Policy 2020.jpg" data-fancybox data-caption="National Education Policy 2020">
-                <img src="My_Photo/Certificates/National Education Policy 2020.jpg"  style="width:100%;max-width:380px" alt="National Education Policy 2020">
-              </a>
-              <div class="portfolio-info"></div>
-            </div>
+          <div class="project-card" data-category="ai" data-reveal data-reveal-delay="1">
+            <div class="project-top"><span class="project-icon"><i class='bx bx-bot'></i></span><span class="project-cat">AI</span></div>
+            <h3>AI-Powered Personal Assistant Bot</h3>
+            <p>An AI-driven bot that automates task assignments and reminders by interpreting natural language, with a custom AI engine and a Go-based WhatsApp messaging server.</p>
+            <div class="project-tech"><span>WhatsApp MCP</span><span>Go</span><span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span><span>NLP</span></div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Certificates/Sololearn_C.jpg" data-fancybox data-caption="Sololearn C">
-                <img src="My_Photo/Certificates/Sololearn_C.jpg"  style="width:100%;max-width:380px" alt="Sololearn C">
-              </a>
-              <div class="portfolio-info"></div>
-            </div>
+          <div class="project-card" data-category="mobile" data-reveal data-reveal-delay="2">
+            <div class="project-top"><span class="project-icon"><i class='bx bx-football'></i></span><span class="project-cat">Mobile</span></div>
+            <h3>Sports Facility Booking App</h3>
+            <p>Mobile app for booking sports facilities, featuring real-time availability updates, secure transactions and a user-friendly booking interface.</p>
+            <div class="project-tech"><span>Flutter</span><span>iOS</span><span>Android</span></div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Certificates/Sololearn_HTML.jpg" data-fancybox data-caption="Sololearn HTML">
-                <img src="My_Photo/Certificates/Sololearn_HTML.jpg"  style="width:100%;max-width:380px" alt="Sololearn HTML">
-              </a>
-              <div class="portfolio-info"></div>
-            </div>
+          <div class="project-card" data-category="mobile" data-reveal>
+            <div class="project-top"><span class="project-icon"><i class='bx bx-scooter'></i></span><span class="project-cat">Mobile</span></div>
+            <h3>Electric Scooter Rental App</h3>
+            <p>Electric scooter rental app with secure authentication (SMS OTP, RTO API) and a dynamic booking system with real-time scooter location tracking.</p>
+            <div class="project-tech"><span>Flutter</span><span>Google Maps API</span><span>Payment Gateway</span><span>RTO API</span></div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Certificates/Sololearn_JAVA.jpg" data-fancybox data-caption="Sololearn JAVA">
-                <img src="My_Photo/Certificates/Sololearn_JAVA.jpg"  style="width:100%;max-width:380px" alt="Sololearn HTML">
-              </a>
-              <div class="portfolio-info"></div>
-            </div>
+          <div class="project-card" data-category="ai" data-reveal data-reveal-delay="1">
+            <div class="project-top"><span class="project-icon"><i class='bx bx-cube-alt'></i></span><span class="project-cat">AR / AI</span></div>
+            <h3>AR-Powered Advertising Platform</h3>
+            <p>iOS app using ARKit and AI/ML models to create immersive advertising experiences through object detection and dynamic ad rendering.</p>
+            <div class="project-tech"><span>Flutter (iOS)</span><span>ARKit</span><span>AI/ML</span><span>QR Scanning</span></div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Certificates/Sololearn_PHP.jpg" data-fancybox data-caption="Sololearn PHP">
-                <img src="My_Photo/Certificates/Sololearn_PHP.jpg"  style="width:100%;max-width:380px" alt="Sololearn HTML">
-              </a>
-              <div class="portfolio-info"></div>
-            </div>
+          <div class="project-card" data-category="mobile" data-reveal data-reveal-delay="2">
+            <div class="project-top"><span class="project-icon"><i class='bx bx-support'></i></span><span class="project-cat">Mobile</span></div>
+            <h3>Ticket Management System</h3>
+            <p>Role-based mobile app for managing service requests, with an engineer dashboard for real-time notifications, automated reporting and RCA logging.</p>
+            <div class="project-tech"><span>Flutter</span><span>iOS</span><span>Android</span></div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Certificates/WHO_Covid-19.png" data-fancybox data-caption="WHO Covid-19">
-                <img src="My_Photo/Certificates/WHO_Covid-19.png"  style="width:100%;max-width:380px" alt="WHO Covid-19">
-              </a>
-              <div class="portfolio-info"></div>
-            </div>
+          <div class="project-card" data-category="mobile" data-reveal>
+            <div class="project-top"><span class="project-icon"><i class='bx bx-camera'></i></span><span class="project-cat">Mobile</span></div>
+            <h3>Fashion &amp; Talent Booking Platform</h3>
+            <p>Fashion and beauty talent platform with user profiles, competition entries and job listings, backed by a Node.js and MongoDB backend.</p>
+            <div class="project-tech"><span>Flutter</span><span>Node.js</span><span>MongoDB</span><span>Firebase</span></div>
+          </div>
+
+          <div class="project-card" data-category="mobile" data-reveal data-reveal-delay="1">
+            <div class="project-top"><span class="project-icon"><i class='bx bx-briefcase'></i></span><span class="project-cat">Mobile</span></div>
+            <h3>Legal Consultation &amp; Case Management App</h3>
+            <p>Legal consultation and case management app with online consultations, case registration, live chat and a lawyer rating system.</p>
+            <div class="project-tech"><span>Flutter</span><span>Node.js</span><span>Firebase</span><span>Google Maps API</span></div>
+          </div>
+
+          <div class="project-card" data-category="mobile" data-reveal data-reveal-delay="2">
+            <div class="project-top"><span class="project-icon"><i class='bx bx-shield-quarter'></i></span><span class="project-cat">Mobile</span></div>
+            <h3>Society Security &amp; Community Management App</h3>
+            <p>Society security and community management app streamlining security workflows, online bill payments and maintenance requests.</p>
+            <div class="project-tech"><span>Flutter</span><span>Node.js</span><span>Firebase</span><span>SQL</span></div>
+          </div>
+
+          <div class="project-card" data-category="mobile" data-reveal>
+            <div class="project-top"><span class="project-icon"><i class='bx bx-hard-hat'></i></span><span class="project-cat">Mobile</span></div>
+            <h3>Task Management &amp; Safety Cockpit App</h3>
+            <p>Task management app with a dedicated Safety Cockpit module for logging safety incidents and observations on-site.</p>
+            <div class="project-tech"><span>Flutter</span><span>Django</span><span>Firebase</span></div>
+          </div>
+
+          <div class="project-card" data-category="mobile" data-reveal data-reveal-delay="1">
+            <div class="project-top"><span class="project-icon"><i class='bx bx-cart'></i></span><span class="project-cat">Mobile</span></div>
+            <h3>Online Grocery Delivery App</h3>
+            <p>Online grocery application with a full product catalog, secure payment integration and real-time order tracking.</p>
+            <div class="project-tech"><span>Flutter</span><span>Odoo (Python)</span><span>Firebase</span><span>Google Maps API</span></div>
+          </div>
+
+          <div class="project-card" data-category="mobile" data-reveal data-reveal-delay="2">
+            <div class="project-top"><span class="project-icon"><i class='bx bx-edit-alt'></i></span><span class="project-cat">Mobile</span></div>
+            <h3>Exam Online Application</h3>
+            <p>Platform for creating and taking online exams, with real-time result processing and an admin dashboard for management.</p>
+            <div class="project-tech"><span>Flutter</span><span>Node.js</span><span>Firebase</span><span>SQL</span></div>
+          </div>
+
+          <div class="project-card" data-category="mobile" data-reveal>
+            <div class="project-top"><span class="project-icon"><i class='bx bx-group'></i></span><span class="project-cat">Mobile</span></div>
+            <h3>Community Content Sharing App</h3>
+            <p>Community app for sharing user-generated content, with secure authentication and real-time data handling.</p>
+            <div class="project-tech"><span>Flutter</span><span>Firebase</span></div>
+          </div>
+
+          <div class="project-card" data-category="mobile" data-reveal data-reveal-delay="1">
+            <div class="project-top"><span class="project-icon"><i class='bx bx-calculator'></i></span><span class="project-cat">Mobile</span></div>
+            <h3>Accounting &amp; Financial Management App</h3>
+            <p>Accounting and financial management app covering P&amp;L statements, transaction records and timely alerts, built with MVVM and GetX.</p>
+            <div class="project-tech"><span>Flutter</span><span>Dart</span><span>Node.js</span><span>React.js</span><span>MySQL</span></div>
+          </div>
+
+          <div class="project-card" data-category="web" data-reveal data-reveal-delay="2">
+            <div class="project-top"><span class="project-icon"><i class='bx bx-box'></i></span><span class="project-cat">Web</span></div>
+            <h3>Warehouse Management System</h3>
+            <p>Warehouse platform for efficient inventory tracking. Led UI development and API integrations, designing for usability while connecting a React front end to a Django backend.</p>
+            <div class="project-tech"><span>React.js</span><span>Chakra UI</span><span>JavaScript</span><span>Django</span></div>
+          </div>
+
+          <div class="project-card" data-category="ai" data-reveal>
+            <div class="project-top"><span class="project-icon"><i class='bx bx-lock-alt'></i></span><span class="project-cat">Data</span></div>
+            <h3>Data Access Governance Platform</h3>
+            <p>Rule-based data governance platform automating access control — translating contract terms into enforceable policies, integrated with Snowflake and Databricks for real-time monitoring.</p>
+            <div class="project-tech"><span>Snowflake</span><span>Databricks</span><span>ServiceNow</span><span>Tableau</span></div>
           </div>
 
         </div>
       </div>
-    </section>
-    
-    
-    
-    
-    <!-- End Portfolio Section -->
+    </section><!-- End Projects -->
 
-    <section  class="portfolio section-bg">
-          <div class="section-title">
-            <h2>ATTEND WEBINAR</h2>
-            <p>MY ONLINE ATTEND WEBINAR</p>
-          </div>
+    <!-- ======= Education Section ======= -->
+    <section id="education">
       <div class="container">
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Certificates/Kotlin_Atmiya.jpg" data-fancybox data-caption="Kotlin Webinar">
-                <img src="My_Photo/Certificates/Kotlin_Atmiya.jpg"  style="width:100%;max-width:380px" alt="Kotlin Webinar ">
-              </a>
-              <div class="portfolio-info"></div>
-            </div>
-          </div>
-        
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Certificates/AWS_Atmiya.jpg" data-fancybox data-caption="AWS Webinar">
-                <img src="My_Photo/Certificates/AWS_Atmiya.jpg"  style="width:100%;max-width:380px" alt="AWS Webinar">
-              </a>
-              <div class="portfolio-info"></div>
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Education</span>
+          <h2>Academic <span class="gradient-text">Background</span></h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="badge-date">2019 — 2021</span>
+              <h3>Master of Computer Applications (MCA)</h3>
+              <span class="org">Atmiya University, Rajkot, India</span>
+              <span class="grade">Grade: 8.77 CGPA</span>
             </div>
           </div>
 
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Certificates/AI_Atmiya.jpg" data-fancybox data-caption="AI Webinar">
-                <img src="My_Photo/Certificates/AI_Atmiya.jpg"  style="width:100%;max-width:380px" alt="AI Webinar">
-              </a>
-              <div class="portfolio-info"></div>
+          <div class="timeline-item" data-reveal data-reveal-delay="1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="badge-date">2016 — 2019</span>
+              <h3>Bachelor of Computer Applications (BCA)</h3>
+              <span class="org">Harivandana College, Rajkot, India</span>
+              <span class="grade">Grade: 7.73 CGPA</span>
             </div>
           </div>
 
+          <div class="timeline-item" data-reveal data-reveal-delay="2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="badge-date">Completed March 2016</span>
+              <h3>Higher Secondary Certificate (H.S.C.)</h3>
+              <span class="org">Genius High School, Gujarat, India</span>
+              <span class="grade">Grade: 60%</span>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </section><!-- End Education -->
 
-
-    <section id="myphoto" class="portfolio section-bg">
-        <div class="section-title">
-          <h2>MY PHOTOS</h2>
-          <p>MY PHOTOS</p>
+    <!-- ======= Certifications Section ======= -->
+    <section id="certificate" class="section-tight" style="background:var(--bg-alt);">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Certifications</span>
+          <h2>Continuous <span class="gradient-text">Learning</span></h2>
+          <p>Online courses and specializations I've completed to sharpen my craft.</p>
         </div>
-    
-      <div class="container" data-aos="fade-up">
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Img1.jpg" data-fancybox data-caption="05/09/2020">
-                <img src="My_Photo/Img1.jpg"  style="width:100%;max-width:380px" alt="Leaning Something new">
-              </a>
-              <div class="portfolio-info"></div>
+        <div class="cert-list">
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>IAM Cloud Security</h4>
+              <span class="cert-org">Great Learning Academy · April 2024</span>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Img2.JPG" data-fancybox data-caption="19/05/2020">
-                <img src="My_Photo/Img2.JPG"  style="width:100%;max-width:380px" alt="Saurashtra University">
-              </a>
-              <div class="portfolio-info"></div>
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>Coding Essentials: Learn Logic Building for Beginners</h4>
+              <span class="cert-org">Scaler Topics · 27 April 2024</span>
             </div>
           </div>
-
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Img11.jpg" data-fancybox data-caption="05/09/2020">
-                <img src="My_Photo/Img11.jpg"  style="width:100%;max-width:380px" alt="Img11">
-              </a>
-              <div class="portfolio-info"></div>
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>Object Oriented Programming in Java</h4>
+              <span class="cert-org">Scaler Topics · 22 April 2024</span>
             </div>
           </div>
-
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Img17.jpg" data-fancybox data-caption="17/03/2019">
-                <img src="My_Photo/Img17.jpg"  style="width:100%;max-width:380px" alt="Img17">
-              </a>
-              <div class="portfolio-info"></div>
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>AWS Free Course</h4>
+              <span class="cert-org">Scaler Topics · 12 April 2024</span>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Img9.jpg" data-fancybox data-caption="17/02/2019">
-                <img src="My_Photo/Img9.jpg"  style="width:100%;max-width:380px" alt="Img9">
-              </a>
-              <div class="portfolio-info"></div>
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>Spring Boot</h4>
+              <span class="cert-org">Mindluster · 9 May 2023</span>
             </div>
           </div>
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Img18.jpg" data-fancybox data-caption="17/02/2019">
-                <img src="My_Photo/Img18.jpg"  style="width:100%;max-width:380px" alt="Img18">
-              </a>
-              <div class="portfolio-info"></div>
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>Python 3.5 Training</h4>
+              <span class="cert-org">EDUCBA · 15 March 2022</span>
+              <a class="cert-link" href="https://www.educba.com/certificate/?c=IVVWE8G93" target="_blank" rel="noopener noreferrer">View credential <i class='bx bx-link-external'></i></a>
             </div>
           </div>
-
-            
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <a href="My_Photo/Nik.JPG" data-fancybox data-caption="">
-                <img src="My_Photo/Nik.JPG"  style="width:100%;max-width:380px" alt="Img19">
-              </a>
-              <div class="portfolio-info"></div>
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>Python for Everybody Specialization</h4>
+              <span class="cert-org">University of Michigan · Coursera</span>
+              <a class="cert-link" href="https://www.coursera.org/account/accomplishments/specialization/certificate/EDCNLMS6AKJ3" target="_blank" rel="noopener noreferrer">View credential <i class='bx bx-link-external'></i></a>
             </div>
           </div>
-
-
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>Single Page Web Applications with AngularJS</h4>
+              <span class="cert-org">Johns Hopkins University · Coursera</span>
+              <a class="cert-link" href="https://coursera.org/share/552e48a8c34195a0debd7ee7ed55a192" target="_blank" rel="noopener noreferrer">View credential <i class='bx bx-link-external'></i></a>
+            </div>
           </div>
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>Java Programming: Solving Problems with Software</h4>
+              <span class="cert-org">Duke University · Coursera</span>
+              <a class="cert-link" href="https://coursera.org/share/a713dcfb75711b79612eb109867044c5" target="_blank" rel="noopener noreferrer">View credential <i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>Using Databases with Python</h4>
+              <span class="cert-org">University of Michigan · Coursera</span>
+              <a class="cert-link" href="https://coursera.org/share/50b3b2b4fa737a4153cec4f5078058bd" target="_blank" rel="noopener noreferrer">View credential <i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>Introduction to CSS3</h4>
+              <span class="cert-org">University of Michigan · Coursera</span>
+              <a class="cert-link" href="https://coursera.org/share/fa05a957675c42d30cacae8302678287" target="_blank" rel="noopener noreferrer">View credential <i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>Android App Components — Intents, Activities &amp; Broadcast Receivers</h4>
+              <span class="cert-org">Vanderbilt University · Coursera</span>
+              <a class="cert-link" href="https://coursera.org/share/376a34da5c50cc93b165920a919cad65" target="_blank" rel="noopener noreferrer">View credential <i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>Build Your First Android App (Project-Centered Course)</h4>
+              <span class="cert-org">CentraleSupélec · Coursera</span>
+              <a class="cert-link" href="https://coursera.org/share/03e7070a0bbba67949f0034afa1e5a6e" target="_blank" rel="noopener noreferrer">View credential <i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>Introduction to Structured Query Language (SQL)</h4>
+              <span class="cert-org">University of Michigan · Coursera</span>
+              <a class="cert-link" href="https://coursera.org/share/3616fff0939d781b8d1137c1f5557d8f" target="_blank" rel="noopener noreferrer">View credential <i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="cert-item" data-reveal>
+            <i class='bx bx-certification cert-ico'></i>
+            <div>
+              <h4>Merge, Sort and Filter Data in Python Pandas</h4>
+              <span class="cert-org">Coursera Project Network</span>
+              <a class="cert-link" href="https://coursera.org/share/0561082c604451e9d157f76a4ead6fa6" target="_blank" rel="noopener noreferrer">View credential <i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="gallery-title" data-reveal>Achievements &amp; Webinar Badges</h3>
+        <div class="gallery-grid" data-reveal>
+          <div class="gallery-item"><img src="My_Photo/Certificates/Certificate_Google_Digital_Garage.jpg" alt="Google Digital Garage certificate" loading="lazy"><span class="zoom-hint"><i class='bx bx-zoom-in'></i></span></div>
+          <div class="gallery-item"><img src="My_Photo/Certificates/MyGov_Ayush Quiz.jpg" alt="MyGov Ayush Quiz certificate" loading="lazy"><span class="zoom-hint"><i class='bx bx-zoom-in'></i></span></div>
+          <div class="gallery-item"><img src="My_Photo/Certificates/MyGov_Covid-19 Quiz.jpg" alt="MyGov Covid-19 Quiz certificate" loading="lazy"><span class="zoom-hint"><i class='bx bx-zoom-in'></i></span></div>
+          <div class="gallery-item"><img src="My_Photo/Certificates/National Education Policy 2020.jpg" alt="National Education Policy 2020 certificate" loading="lazy"><span class="zoom-hint"><i class='bx bx-zoom-in'></i></span></div>
+          <div class="gallery-item"><img src="My_Photo/Certificates/Sololearn_C.jpg" alt="Sololearn C certificate" loading="lazy"><span class="zoom-hint"><i class='bx bx-zoom-in'></i></span></div>
+          <div class="gallery-item"><img src="My_Photo/Certificates/Sololearn_HTML.jpg" alt="Sololearn HTML certificate" loading="lazy"><span class="zoom-hint"><i class='bx bx-zoom-in'></i></span></div>
+          <div class="gallery-item"><img src="My_Photo/Certificates/Sololearn_JAVA.jpg" alt="Sololearn Java certificate" loading="lazy"><span class="zoom-hint"><i class='bx bx-zoom-in'></i></span></div>
+          <div class="gallery-item"><img src="My_Photo/Certificates/Sololearn_PHP.jpg" alt="Sololearn PHP certificate" loading="lazy"><span class="zoom-hint"><i class='bx bx-zoom-in'></i></span></div>
+          <div class="gallery-item"><img src="My_Photo/Certificates/WHO_Covid-19.png" alt="WHO Covid-19 certificate" loading="lazy"><span class="zoom-hint"><i class='bx bx-zoom-in'></i></span></div>
+          <div class="gallery-item"><img src="My_Photo/Certificates/Kotlin_Atmiya.jpg" alt="Kotlin webinar badge" loading="lazy"><span class="zoom-hint"><i class='bx bx-zoom-in'></i></span></div>
+          <div class="gallery-item"><img src="My_Photo/Certificates/AWS_Atmiya.jpg" alt="AWS webinar badge" loading="lazy"><span class="zoom-hint"><i class='bx bx-zoom-in'></i></span></div>
+          <div class="gallery-item"><img src="My_Photo/Certificates/AI_Atmiya.jpg" alt="AI webinar badge" loading="lazy"><span class="zoom-hint"><i class='bx bx-zoom-in'></i></span></div>
+        </div>
       </div>
-    </section>
+    </section><!-- End Certifications -->
+
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>DROP ME A LINE</h2>
+    <section id="contact">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Contact</span>
+          <h2>Let's <span class="gradient-text">Work Together</span></h2>
+          <p>Have a project in mind or an opportunity to discuss? I'd love to hear from you.</p>
         </div>
 
-        <div class="row mt-1">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>Rajkot, India</p>
-              </div>
-
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>nikhilpatel4593@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 95123 61221</p>
-              </div>
-
+        <div class="contact-grid">
+          <div class="contact-info-card" data-reveal>
+            <div class="info-row">
+              <i class='bx bx-map'></i>
+              <div><h4>Location</h4><span>Manavadar, Gujarat, India</span></div>
+            </div>
+            <div class="info-row">
+              <i class='bx bx-envelope'></i>
+              <div><h4>Email</h4><a href="mailto:nikhil.garalamca@gmail.com">nikhil.garalamca@gmail.com</a></div>
+            </div>
+            <div class="info-row">
+              <i class='bx bx-phone'></i>
+              <div><h4>Phone</h4><a href="tel:+919512361221">+91 95123 61221</a></div>
+            </div>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/garalanikhil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+              <a href="https://www.instagram.com/garala_nikhil/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+              <a href="https://twitter.com/GaralaNikhil" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i class='bx bxl-twitter'></i></a>
+              <a href="https://www.facebook.com/people/Nikhil-Patel/100009687433294" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
             </div>
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
-            <form action="forms/contact.php" method="post" role="form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
+          <form class="contact-form" id="contact-form" data-to="nikhil.garalamca@gmail.com" data-reveal data-reveal-delay="1"
+                action="mailto:nikhil.garalamca@gmail.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" autocomplete="name" required minlength="2">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" autocomplete="email" required>
               </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">SAY HELLO!</button></div>
-            </form>
-          </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required minlength="5"></textarea>
+            </div>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+            <button type="submit" class="btn btn-primary"><i class='bx bx-paper-plane'></i> Send Message</button>
+            <p class="form-hint">Opens your email app with this message pre-filled — no data leaves your device.</p>
+          </form>
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
+    </section><!-- End Contact -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Garala Nikhil</h3>
-      <!-- <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p> -->
+      <a href="#hero" class="logo">Nikhil<span>Garala.</span></a>
+      <p class="tag">Senior Software Engineer crafting cross-platform mobile experiences with an AI/ML and full-stack edge.</p>
       <div class="social-links">
-          <a href="https://www.facebook.com/people/Nikhil-Patel/100009687433294" target="_BLANCK" class="Facebook"><i class="icofont-facebook"></i></a>
-          <a href="https://www.instagram.com/garala_nikhil/" target="_BLANCK" class="Instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/garalanikhil" target="_BLANCK" class="Linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://twitter.com/GaralaNikhil" target="_BLANCK" class="Twitter"><i class="bx bxl-twitter"></i></a>
-          <!-- <a href="www.google.com" ><i class="bx bxl-twitter"></i></a> -->
-          <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+        <a href="https://www.linkedin.com/in/garalanikhil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://www.instagram.com/garala_nikhil/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+        <a href="https://twitter.com/GaralaNikhil" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i class='bx bxl-twitter'></i></a>
+        <a href="https://www.facebook.com/people/Nikhil-Patel/100009687433294" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
       </div>
       <div class="copyright">
-        <!-- &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved -->
+        &copy; <span id="year">2026</span> Nikhil Garala. All Rights Reserved.
       </div>
-      
     </div>
   </footer><!-- End Footer -->
-  
-  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
-  <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/js/jquery.js"></script>
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
-  <script src="assets/vendor/venobox/vensobox.min.js"></script>
+  <a href="#hero" class="back-to-top" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
+
+  <!-- Lightbox -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview">
+    <button type="button" class="lb-close" aria-label="Close preview"><i class='bx bx-x'></i></button>
+    <img src="" alt="">
+    <p class="lb-caption"></p>
+  </div>
+
+  <!-- Vendor JS -->
   <script src="assets/vendor/typed.js/typed.min.js"></script>
-  
-  <script src="assets/fancybox/jquery-3.4.1.min.js"></script>
-  <script src="assets/fancybox/jquery.fancybox.min.js"></script>
 
- 
-  
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  
-  
-  
-  
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  
+  <!-- Site JS -->
+  <script src="assets/js/portfolio.js"></script>
 </body>
-
 </html>
